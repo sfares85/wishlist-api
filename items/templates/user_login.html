@@ -2,8 +2,8 @@
 
 {% block content %}
 <form action="{% url 'user-login' %}" method="POST">
-    {% csrf_token %}
-    {{login_form.as_p}}
+    {%csrf_token%}
+    {{login_form}}
     <input type="submit" value="Login">
 </form>
 {% endblock %}
